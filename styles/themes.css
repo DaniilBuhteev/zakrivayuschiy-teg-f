@@ -1,0 +1,60 @@
+/* В этом файле вы опишете значения переменных в разных цветовых схемах. Придерживайтесь такого именования классов: ✦ theme-dark — класс тёмной темы ✦ theme-light — класс светлой темы ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений */
+:root.theme-dark {
+  --Inter: 'Inter-Variable', sans-serif;
+  --PressStart2P: 'PressStart2P-Regular', sans-serif;
+  --bg-main-color: #000;
+  --accent-color: #00CC14;
+  --text-button-color: #00CC14;
+  --header-title-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  --header-description-size:clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  --font-weight: 465;
+  --heart-line-color: #00CC14;
+  --heart-fill-color: #F00;
+  --bg-main-image: repeating-linear-gradient( to right , transparent 0 2px, #000 2px 4px), repeating-linear-gradient( to top, transparent 0 2px, #000 2px 4px), linear-gradient( to bottom, #007f0c , #004306 );
+}
+
+:root.theme-light {
+  --Inter: 'Inter-Variable', sans-serif;
+  --PressStart2P: 'PressStart2P-Regular', sans-serif;
+  --bg-main-color: #FFF;
+  --accent-color: #000;
+  --text-button-color: #FFF;
+  --heart-line-color: #000;
+  --header-title-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  --header-description-size:clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  --font-weight: 400;
+  --heart-fill-color: #F00;
+  --bg-main-image: repeating-linear-gradient( to right , transparent 0 2px, #d3d3d3 2px 4px), repeating-linear-gradient( to top, transparent 0 2px, #d3d3d3 2px 4px), linear-gradient( to bottom, #e7e7e7 , #1a1a1a );
+}
+
+@media(prefers-color-scheme:dark ) {
+  :root{
+    --Inter: 'Inter-Variable', sans-serif;
+    --PressStart2P: 'PressStart2P-Regular', sans-serif;
+    --bg-main-color: #000;
+    --accent-color: #00CC14;
+    --text-button-color: #00CC14;
+    --heart-line-color: #00CC14;
+    --heart-fill-color: #F00;
+    --header-title-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+    --header-description-size:clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+    --font-weight: 465;
+    --bg-main-image: repeating-linear-gradient( to right , transparent 0 2px, #000 2px 4px), repeating-linear-gradient( to top, transparent 0 2px, #000 2px 4px), linear-gradient( to bottom, #007f0c , #004306 );
+ }
+}
+
+@media(prefers-color-scheme:light) {
+  :root {
+    --Inter: 'Inter-Variable', sans-serif;
+    --PressStart2P: 'PressStart2P-Regular', sans-serif;
+    --bg-main-color: #FFF;
+    --accent-color: #000;
+    --text-button-color: #FFF;
+    --heart-line-color: #000;
+    --header-title-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+    --header-description-size:clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+    --font-weight: 400;
+    --heart-fill-color: #F00;
+    --bg-main-image: repeating-linear-gradient( to right , transparent 0 2px, #d3d3d3 2px 4px), repeating-linear-gradient( to top, transparent 0 2px, #d3d3d3 2px 4px), linear-gradient( to bottom, #e7e7e7 , #1a1a1a );
+ }
+}
